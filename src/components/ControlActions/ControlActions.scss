@@ -1,0 +1,41 @@
+.page-container {
+  &__notification {
+    position: absolute;
+    z-index: 2222222222;
+    background-color: #005b7f;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    top: 1rem;
+    right: 1rem;
+    width: 300px;
+    font-size: 15px;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &__notification-text {
+    margin: 0 5px;
+  }
+}
+.btn {
+  &__zoom-group {
+    display: inline-flex;
+    flex-direction: column;
+
+    button {
+      margin-bottom: 0 !important;
+      &:first-child {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+      &:last-child {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        margin-top: -1px;
+      }
+    }
+  }
+}

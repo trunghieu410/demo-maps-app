@@ -1,23 +1,22 @@
-type MarkerData = Array<{
-  id: string;
-  position: google.maps.LatLngLiteral;
-  type: "pin" | "html";
-  zIndex: number;
-}>;
 import { NONG_HO } from "./nongho";
 
+type MarkerDataType = {
+  key: string;
+  position: google.maps.LatLngLiteral;
+};
+
 export function getData() {
-  const data: MarkerData = [];
+  const data: MarkerDataType[] = [];
 
   // create 50 random markers
   for (let index = 0; index < NONG_HO.length; index++) {
     data.push({
-      id: String(index),
+      key: String(index),
       position: NONG_HO[index],
-      zIndex: index,
-      type: Math.random() < 0.5 ? "pin" : "html",
     });
   }
 
   return data;
 }
+
+export { type MarkerDataType };

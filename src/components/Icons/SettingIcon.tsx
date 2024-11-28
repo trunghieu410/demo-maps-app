@@ -1,4 +1,4 @@
-const SettingIcon = () => (
+export const SettingIcon = () => (
   <svg
     width="16"
     height="16"
@@ -22,5 +22,3 @@ const SettingIcon = () => (
     ></path>
   </svg>
 );
-
-export default SettingIcon;

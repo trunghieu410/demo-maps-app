@@ -1,6 +1,4 @@
-import React from "react";
-
-const SettingIcon = () => (
+export const LayersIcon = () => (
   <svg
     width="16"
     height="16"
@@ -31,5 +29,3 @@ const SettingIcon = () => (
     ></path>
   </svg>
 );
-
-export default SettingIcon;

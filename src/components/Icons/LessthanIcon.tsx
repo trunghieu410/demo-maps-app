@@ -1,4 +1,4 @@
-const LessthanIcon = () => (
+export const LessthanIcon = () => (
   <svg
     width="16"
     height="16"
@@ -15,5 +15,3 @@ const LessthanIcon = () => (
     ></path>
   </svg>
 );
-
-export default LessthanIcon;
